@@ -41,10 +41,12 @@ p.lead b{
     line-height: 1.5em;
 }
 .header h1 {
-    margin-bottom: 115px;
     font-style: italic;
     font-variant: small-caps;
     font-weight: 300;
+}
+.header #dotty {
+    transform: translateY(-28%);
 }
 .header #some-bar {
     margin-top: 25px;
@@ -241,6 +243,26 @@ a.email {
     }
     .container {
         width: 1000px;    
+    }
+}
+@media (max-width: 600px) {
+    section h1 {
+        margin-top: 100px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .header .cover-slogan {
+        margin-top: 50px;
+    }
+    #cover-container {
+        height: 380px;
+    }   
+    div.cover {
+        height: 450px;
+    }
+    div.cover .img {
+        height: 750px;
     }
 }
 
