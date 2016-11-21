@@ -70,13 +70,15 @@
 
   <body>
 
-    <header >
+    <header>
+  
+  <div class="bg-overlay"></div>
   <a href="/"><img id="logo" src="/images/logo.png"></a>
 <ul>
   <li><a  href="/">Home</a></li>
-  <!-- <li><a  href="/games">Games</a></li> -->
-  <!-- <li><a  href="/news">News</a></li> -->
-  <!-- <li><a  href="/team">Team</a></li> -->
+  <li><a  href="/games">Games</a></li>
+  <li><a  href="/news">News</a></li>
+  <li><a  href="/team">Team</a></li>
   <li><a  href="/join-us">Join Us</a></li>
 </ul>
 
@@ -91,8 +93,28 @@
     </div>
   </div>
 
-  
 </header>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      function shuffleArray(array) {
+          for (var i = array.length - 1; i > 0; i--) {
+              var j = Math.floor(Math.random() * (i + 1));
+              var temp = array[i];
+              array[i] = array[j];
+              array[j] = temp;
+          }
+          return array;
+      }
+      var imgs = shuffleArray([3,4,10]).map(i => "/images/headers/bg-" + i + ".jpg")
+      $("header").bgswitcher({
+        images: imgs,
+        loop: true,
+        interval: 10000
+      });
+    })
+  </script>
+  
 
 
     <div class="content">
