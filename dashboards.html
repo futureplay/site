@@ -4,28 +4,30 @@
 <body>
 <!-- Page content -->
 <div class="w3-content" id="dashboards" style="border: 0; width: 100%;">
-	<div class="w3-black" id="0" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/18" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="1" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/29" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="2" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/22" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="3" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/30" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="4" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/7" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="5" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/31" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="6" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/32" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="7" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/27" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="8" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/19" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
-	<div class="w3-black" id="9" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/33" style="border: 0; width: 100%; height: 1000px"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="0" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/18" style="border: 0; width: 100%; height:100vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="1" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/29" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="2" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/22" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="3" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/30" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="4" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/7" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="5" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/31" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="6" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/32" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="7" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/27" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="8" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/19" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
+	<div class="w3-black" id="9" style="border: 0; width: 100%;">	<iframe src="https://futureplay.eu.looker.com/embed/dashboards/33" style="border: 0; width: 100%; height: 1000vh"  frameborder="3">		</iframe>	</div>
 </div>
 </body>
 </html>
 
+
+
 <script>
 function scroll(x=0) {
+	var scrollTime = 1000*60*5;
 	window.location.href='#'+ x;
-	//var next = (x+1) % numOfDashboards;
 	var dashboards = document.getElementById('dashboards');
 	var numOfDashboards = dashboards.getElementsByTagName('div').length;
 	var next = (x+1) % numOfDashboards;
-	setTimeout(function(){ scroll(next) },30000);
+	setTimeout(function(){ scroll(next) },scrollTime);
 }
 scroll();
 </script>
