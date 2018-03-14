@@ -126,17 +126,19 @@ body {
   font-weight: 400;
   font-family: "Raleway", "Raleway", "Raleway", Helvetica, Arial, sans-serif;
   color: #FFF;
-  background-image: url("/images/bg.png");
-  background-size: cover;
-  min-height: 100%;
-  /* -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain; */
-  /* background-repeat: no-repeat; */
-  background-color: #073c78;
-  background-position: top;
-  background-attachment: fixed;
+  background-image: url("/images/topbg.png");
+  background-repeat: repeat-x;
+  background-color: #073368;
+  background-position: center top;
 }
+#footer {
+  background-image: url("/images/bottombg.png");
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-color: #073368;
+
+}
+
 
 
 
@@ -408,6 +410,8 @@ hr {
   
 .header {
 	padding-bottom: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 	background-color: #3e3668;
 	margin-top: -8px;
 }
