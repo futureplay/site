@@ -126,12 +126,13 @@ body {
   font-weight: 400;
   font-family: "Raleway", "Raleway", "Raleway", Helvetica, Arial, sans-serif;
   color: #FFF;
-  background-image: url("/images/bg.png");
-  background-repeat: no-repeat;
-  background-color: #073c78;
-  background-attachment: fixed;
-  background-position: center; 
-   }
+  background: url("/images/bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 
 
 /* Typography
@@ -178,7 +179,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
-  padding-top: 55px;
+  padding-top: 40px;
   color: #555;
   text-align: center;
   font-size: 120px;
@@ -334,6 +335,7 @@ td {
   font-size: 32px;
   padding: 12px 15px;
   text-align: center;
+  font-weight: normal;
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
 td:first-child {
@@ -345,7 +347,8 @@ td:last-child {
   td {
   background-color: #FFF;
    padding: 0px;
-   padding-top: 60px;
+   padding-top: 40px;
+padding-bottom: -30px;
 
  }
 
@@ -355,9 +358,9 @@ td:last-child {
 button,
 .button {
 	background-color: #df5468;
-	height: 150px;
-    width: 440px;
-    font-size: 60px;
+	height: 120px;
+    width: 320px;
+    font-size: 46px;
   margin-bottom: 1rem; }
 input,
 textarea,
@@ -399,8 +402,17 @@ hr {
   border-top: 1px solid #E1E1E1; }
   
 .header {
-	padding: 20px;
+	padding-bottom: 40px;
+	background-color: #3e3668;
+	margin-top: -8px;
 }
+
+  
+.headertext {
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
 
 img {
     max-width: 100%;
