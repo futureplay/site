@@ -126,11 +126,12 @@ body {
   font-weight: 400;
   font-family: "Raleway", "Raleway", "Raleway", Helvetica, Arial, sans-serif;
   color: #FFF;
-  background: url("/images/bg.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: url("/images/bg.png");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #073c78;
+  background-position: top;
+  background-attachment: fixed;
 }
 
 
