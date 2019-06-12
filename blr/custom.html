@@ -8,8 +8,8 @@
 	<meta property="og:image" content="https://basse.github.io/blr/images/FB-preview.png" />
 	<meta property="og:image:width" content="1125"/>
 	<meta property="og:image:height" content="589"/>
-	<meta name="Description" content="Buddy up with me in Battlelands Royale"/>
-    <title>Battlelands Royale - Buddy Invite</title>
+	<meta name="Description" content="Join me in a Custom Battle in Battlelands Royale!"/>
+    <title>Battlelands Royale - Custom Battle</title>
     <style type="text/css">
 		body {
 			text-align: right;
@@ -56,7 +56,7 @@
             const invite = urlParams.get('i')
             const platform = getPlatform()
             document.getElementById("storeLink").href = (platform.android ? gpLink : asLink)
-            document.getElementById("appLink").href = "blr://inviteFriend/" + invite
+            document.getElementById("appLink").href = "blr://customBattle/" + invite
             document.getElementById("appLink").scrollIntoView(false)
         }
         window.onresize = function() {
@@ -75,7 +75,7 @@
 	<div id ="wrapper" class="aspectWrapper">
 		<div id="content">
 				<img src="images/image1.png" alt=""/>
-				<img src="images/image2a.png" alt=""/>
+				<img src="images/image2b.png" alt=""/>
 				<a id="storeLink" href=""><img src="images/image3.png" alt=""/></a>
 				<a id="appLink" href=""><img src="images/image4.png" alt=""/></a>
 				<img src="images/image5.png" alt=""/>
