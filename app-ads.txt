@@ -1,6 +1,6 @@
 google.com, pub-7178055090700599, DIRECT, f08c47fec0942fa0
 adcolony.com, ca5bd95ccaf2d2433b722aa457d5fa8c, DIRECT, 1ad675c9de6b5176
-unity3d.com, 40118, DIRECT, 96cabb5fbdde37a7
+unity3d.com,Ê40118, DIRECT, 96cabb5fbdde37a7
 telaria.com, rwd19-40118, RESELLER, 1a4e959a1b50034a
 tremorhub.com, rwd19-40118, RESELLER, 1a4e959a1b50034a
 loopme.com, 9621, RESELLER, 6c8d5f95897a5a3b
@@ -52,4 +52,4 @@ video.unrulymedia.com, 3630748062, RESELLER, a670c89d4a324e47
 google.com, pub-1127030757540716, RESELLER
 telaria.com, rwd19-40118, RESELLER, 1a4e959a1b50034a
 tremorhub.com, rwd19-40118, RESELLER, 1a4e959a1b50034a
-
+facebook.com, 967910429939982, DIRECT, c3e20eee3f780d68
